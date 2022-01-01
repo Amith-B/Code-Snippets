@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="container">
+      <div id="scene">
+        <div class="box box__front"></div>
+        <div class="box box__front-withimg"></div>
+
+        <!-- outer sides of the 3d box -->
+        <div class="outer outer__left"></div>
+        <div class="outer outer__top"></div>
+        <div class="outer outer__right"></div>
+        <div class="outer outer__bottom"></div>
+
+        <!-- inner sides of the 3d box -->
+        <div class="inner inner__left"></div>
+        <div class="inner inner__top"></div>
+        <div class="inner inner__right"></div>
+        <div class="inner inner__bottom"></div>
+
+        <div class="box box__back"></div>
+        <div class="box box__back-withimg"></div>
+      </div>
+
+      <label for="x__axis">Rotate X Axis</label><br />
+      <input
+        id="x__axis"
+        type="range"
+        min="0"
+        max="360"
+        value="0"
+        step="1"
+        oninput="rotateX(this.value)"
+      />
+      <br />
+      <label for="y__axis">Rotate Y Axis</label><br />
+      <input
+        id="y__axis"
+        type="range"
+        min="0"
+        max="360"
+        value="0"
+        step="1"
+        oninput="rotateY(this.value)"
+      />
+      <br />
+      <label for="z__axis">Rotate Z Axis</label><br />
+      <input
+        id="z__axis"
+        type="range"
+        min="0"
+        max="360"
+        value="0"
+        step="1"
+        oninput="rotateZ(this.value)"
+      />
+      <br />
+      <label for="perspective">Perspective</label><br />
+      <input
+        id="perspective"
+        type="number"
+        min="0"
+        max="10000"
+        value="500"
+        step="1"
+        oninput="changePerspective(this.value)"
+      />
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
