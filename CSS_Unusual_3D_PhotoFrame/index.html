@@ -29,49 +29,51 @@
         <div class="box box__back-withimg"></div>
       </div>
 
-      <label for="x__axis">Rotate X Axis</label><br />
-      <input
-        id="x__axis"
-        type="range"
-        min="0"
-        max="360"
-        value="0"
-        step="1"
-        oninput="rotateX(this.value)"
-      />
-      <br />
-      <label for="y__axis">Rotate Y Axis</label><br />
-      <input
-        id="y__axis"
-        type="range"
-        min="0"
-        max="360"
-        value="0"
-        step="1"
-        oninput="rotateY(this.value)"
-      />
-      <br />
-      <label for="z__axis">Rotate Z Axis</label><br />
-      <input
-        id="z__axis"
-        type="range"
-        min="0"
-        max="360"
-        value="0"
-        step="1"
-        oninput="rotateZ(this.value)"
-      />
-      <br />
-      <label for="perspective">Perspective</label><br />
-      <input
-        id="perspective"
-        type="number"
-        min="0"
-        max="10000"
-        value="500"
-        step="1"
-        oninput="changePerspective(this.value)"
-      />
+      <div id="controls">
+        <label for="x__axis">Rotate X Axis</label><br />
+        <input
+          id="x__axis"
+          type="range"
+          min="0"
+          max="360"
+          value="0"
+          step="1"
+          oninput="rotateX(this.value)"
+        />
+        <br />
+        <label for="y__axis">Rotate Y Axis</label><br />
+        <input
+          id="y__axis"
+          type="range"
+          min="0"
+          max="360"
+          value="0"
+          step="1"
+          oninput="rotateY(this.value)"
+        />
+        <br />
+        <label for="z__axis">Rotate Z Axis</label><br />
+        <input
+          id="z__axis"
+          type="range"
+          min="0"
+          max="360"
+          value="0"
+          step="1"
+          oninput="rotateZ(this.value)"
+        />
+        <br />
+        <label for="perspective">Perspective</label><br />
+        <input
+          id="perspective"
+          type="number"
+          min="0"
+          max="10000"
+          value="500"
+          step="1"
+          oninput="changePerspective(this.value)"
+        />
+      </div>
     </section>
 
     <script src="script.js"></script>
